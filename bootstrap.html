@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Community Events Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container py-4">
+  <h1 class="display-4 text-center text-primary mb-5"></h1>
+
+  <!-- Grid Layout -->
+  <div class="row mb-4">
+    <div class="col-12 col-sm-6 col-md-4 bg-warning p-3">Name</div>
+    <div class="col-12 col-sm-6 col-md-4 bg-success p-3">DOB</div>
+    <div class="col-12 col-sm-6 col-md-4 bg-info p-3">Place</div>
+  </div>
+
+  <!-- 2-Column Layout -->
+  <div class="row mb-4">
+    <div class="col-md-3 bg-light p-3">Sidebar</div>
+    <div class="col-md-9 bg-secondary text-white p-3">Content Area</div>
+  </div>
+
+  <!-- 4 Column Equal Width -->
+  <div class="row mb-4">
+    <div class="col-sm-3 bg-danger text-white p-2">1</div>
+    <div class="col-sm-3 bg-primary text-white p-2">2</div>
+    <div class="col-sm-3 bg-dark text-white p-2">3</div>
+    <div class="col-sm-3 bg-info text-white p-2">4</div>
+  </div>
+
+  <!-- Alignment and Reordering -->
+  <div class="row justify-content-center align-items-center mb-4" style="height: 100px;">
+    <div class="col-6 order-md-2 bg-light text-center p-2">Column A (order 2)</div>
+    <div class="col-6 order-md-1 bg-dark text-white text-center p-2">Column B (order 1)</div>
+  </div>
+
+  <!-- Flexbox Navbar -->
+  <nav class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 bg-light mb-4">
+    <a href="#" class="text-decoration-none fw-bold">MyLogo</a>
+    <div class="d-flex">
+      <a href="#" class="me-3">Home</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Typography -->
+  <div class="mb-4">
+    <h2 class="display-6">Type the Details</h2>
+    <p class="lead text-muted">This data is needed to complete the profile.</p>
+    
+  </div>
+
+  <!-- Form -->
+  <form class="mb-4">
+    <h2>Registration Form</h2>
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Full Name">
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Email">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="check">
+      <label class="form-check-label" for="check">I agree</label>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">@</span>
+      <input type="text" class="form-control" placeholder="Username">
+    </div>
+  </form>
+
+  <!-- Login Form with Floating Labels -->
+  <form class="mb-4">
+    <h2>Login Form</h2>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+      <label for="floatingEmail">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+  </form>
+
+  <!-- Buttons -->
+  <div class="mb-4">
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-outline-secondary">Outline</button>
+    <div class="btn-group mt-3" role="group">
+      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+      <label class="btn btn-outline-success" for="btncheck1">Toggle</label>
+    </div>
+  </div>
+
+  <!-- Navbar with Search -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-4">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Tab 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Tab 2</a>
+    </li>
+  </ul>
+
+  <!-- Cards -->
+  <div class="card mb-4" style="width: 18rem;">
+    <img src="th (2).jpg" class="card-img-top rounded-circle" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Nandhini</h5>
+      <p class="card-text">This shows the identity of the person</p>
+    </div>
+  </div>
+
+  <!-- Media Object (with Bootstrap 5 support using flex) -->
+  <div class="d-flex align-items-start mb-4">
+    <img src="https://via.placeholder.com/64" class="me-3" alt="...">
+    <div>
+      <h5>About the Page</h5>
+      <p>The content of  the image.</p>
+    </div>
+  </div>
+
+  <!-- Spacing -->
+  <div class="bg-light m-3 p-4 mb-4">
+    <h5>Pricing Section</h5>
+    <p class="py-3">Spacious layout for pricing info.</p>
+  </div>
+
+  <!-- Colors and Background -->
+  <div class="bg-gradient bg-primary text-white p-3 mb-4">
+    <h4>Dashboard</h4>
+    <p>Using gradient and text color</p>
+  </div>
+
+  <!-- Visibility -->
+  <div class="d-none d-md-block d-lg-flex bg-warning p-3 mb-4">
+    <p>Visible only on md and lg screens</p>
+  </div>
+
+  <!-- Borders & Shadows -->
+  <img src="https://via.placeholder.com/100" class="border border-primary border-3 rounded-circle shadow-lg mb-4">
+
+  <!-- Positioning -->
+  <div class="position-relative mb-4">
+    <img src="https://via.placeholder.com/150" class="img-fluid">
+    <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">New</span>
+  </div>
+  <footer class="position-fixed bottom-0 start-0 end-0 bg-dark text-white text-center py-2">Fixed Footer</footer>
+
+  <!-- Bootstrap Icons -->
+  <div class="mt-5">
+    <i class="bi bi-facebook fs-3 me-3"></i>
+    <i class="bi bi-twitter fs-3 me-3"></i>
+    <i class="bi bi-instagram fs-3"></i>
+  </div>
+  <button class="btn btn-outline-secondary mt-3"><i class="bi bi-gear"></i></button>
+
+  <!-- JS Components -->
+  <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#myModal">Launch Modal</button>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">This is a Bootstrap modal.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion mt-4" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">Content inside accordion.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

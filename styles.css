@@ -1,0 +1,122 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Header Styling with ID Selector */
+#mainHeader {
+  text-align: center;
+  color: #2c3e50;
+  padding: 20px;
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+}
+
+/* Grouped Selectors */
+h3, p {
+  color: #333;
+}
+
+/* Class Selector for Event Cards */
+.eventCard {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Pseudo-class for Button Hover */
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Links Styling */
+a:link,
+a:visited {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+/* Table Styling */
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Multi-column Text Section */
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  margin: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .eventCard {
+    margin: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .news-article {
+    column-count: 1;
+  }
+}
